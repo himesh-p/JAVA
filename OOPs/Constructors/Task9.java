@@ -17,6 +17,7 @@ class Movie{
         System.out.println("The release Year of the movie is :- "+releaseYear);
     }
 }
+
 public class Task9 {
     public static void main(String[] args) {
         Movie obj[] = new Movie[3];

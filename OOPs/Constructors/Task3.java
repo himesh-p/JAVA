@@ -24,7 +24,7 @@ class Rectangle{
     void Area(){
         System.out.println("The area of Rectangle is :- "+(length*width));
     }
-};
+}
 
 
 public class Task3 {

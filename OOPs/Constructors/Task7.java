@@ -23,7 +23,7 @@ class Laptop{
         System.out.println("The price of the Laptop is :- "+price);
     }
 
-};
+}
 
 
 public class Task7 {

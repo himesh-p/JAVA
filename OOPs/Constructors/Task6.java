@@ -22,7 +22,7 @@ class Time{
         System.out.println(String.format("Time: %02d:%02d", hour, minute));
         // System.out.printf("Time: %02d:%02d", hour, minute);
     }
-};
+}
 
 public class Task6 {
     public static void main(String[] args) {

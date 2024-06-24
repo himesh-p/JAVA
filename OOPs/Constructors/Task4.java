@@ -22,7 +22,7 @@ class Student{
         System.out.println("The roll no of student is :- "+rollNumber);
     }
 
-};
+}
 
 public class Task4 {
     public static void main(String[] args) {

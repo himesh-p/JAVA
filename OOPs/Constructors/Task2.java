@@ -22,7 +22,7 @@ class Book{
         System.out.println("The author of the book is :- "+author);
         System.out.println("The price of the book is :- "+price);
     }
-};
+}
 
 public class Task2 {
     public static void main(String[] args) {

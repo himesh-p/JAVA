@@ -19,7 +19,7 @@ class BankAccount{
             System.out.println("Your balance is invailid please resend money.");
         }
     }
-};
+}
 
 public class Task5 {
     public static void main(String[] args) {
