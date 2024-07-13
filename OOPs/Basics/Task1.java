@@ -21,7 +21,7 @@ class Employees{
         System.out.println("The Employee's name is :- "+name);
         System.out.println("The Employee's salary is :- "+salary);
     }
-};
+}
 
 public class Task1{
     public static void main(String[] args){
