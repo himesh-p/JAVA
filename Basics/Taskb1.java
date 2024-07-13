@@ -7,5 +7,6 @@ public class Taskb1{
 		System.out.println("Enter the name of the user :- ");
 		String name1 = sc.next();
 		System.out.println("Hello,\n"+name1);
+		sc.close();
 	}
 }

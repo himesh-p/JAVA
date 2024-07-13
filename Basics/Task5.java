@@ -11,5 +11,6 @@ public class Task5{
 		double height1 = sc.nextDouble();
 		double bmi = weight1/(height1*height1);
 		System.out.println("The Body Mass Index of the user is :- "+bmi);
+		sc.close();
 	}
 }

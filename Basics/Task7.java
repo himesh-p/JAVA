@@ -7,5 +7,6 @@ public class Task7{
 		System.out.println("Enter the color of the user :- ");
 		String color1 = sc.next();
 		System.out.println("I am using "+color1+" Bottle in my college.");
+		sc.close();
 	}
 }

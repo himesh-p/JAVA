@@ -5,10 +5,9 @@ public class Task6{
 	public static void main(String[] args){
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter the any Passward but criteria(minimum length, containing numbers and special characters) :- ");
-		String pass = sc.nextLine();
+		// String pass = sc.nextLine();
 		//int len = pass.length();
 		//if(pass >= len || pass){}
-		
-		System.out.println();
+		sc.close();
 	}
 }

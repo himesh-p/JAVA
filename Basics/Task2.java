@@ -12,5 +12,6 @@ public class Task2{
 		else{
 			System.out.println("User Not Eligible for voting.");
 		}
+		sc.close();
 	}
 }

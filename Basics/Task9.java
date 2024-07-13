@@ -15,5 +15,6 @@ public class Task9{
 		String zip1 = sc.nextLine();
 		System.out.println("The address of the user is :- ");
 		System.out.println(street1+ "," +city1+ "," +state1+ "," +zip1);
+		sc.close();
 	}
 }

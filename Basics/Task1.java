@@ -5,7 +5,8 @@ public class Task1{
 	public static void main(String[] args){
 		Scanner sc = new Scanner(System.in);
 		System.out.println("Enter the name of the user :- ");
-		String name1 = sc.next();
+		String name1 = sc.nextLine();
 		System.out.println("Hello,"+name1+" Good Morning!!!");
+		sc.close();
 	}
 }

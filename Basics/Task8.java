@@ -13,5 +13,6 @@ public class Task8{
 		double m3 = sc.nextDouble();
 		double avg = (m1+m2+m3)/3;
 		System.out.println("The average marks of the user is :- "+avg);
+		sc.close();
 	}
 }

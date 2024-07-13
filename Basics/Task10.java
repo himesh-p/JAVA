@@ -17,5 +17,6 @@ public class Task10{
 		System.out.println("a - b = "+sub);
 		System.out.println("a * b = "+mul);
 		System.out.println("a / b = "+div);
+		sc.close();
 	}
 }
