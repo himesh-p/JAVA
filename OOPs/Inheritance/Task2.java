@@ -7,27 +7,43 @@ class Animal{
     public Animal(String species){
         this.species = species;
     }
-    
-}
 
-class Mammal{
-    private String hasFur;
-
-    public Mammal(String hasFur){
-        this.hasFur = hasFur;
+    public void makeSound(){
+        System.out.println("Animal Sound....");
     }
 }
 
-class Dog{
+class Mammal extends Animal{
+    private String hasFur;
+
+    public Mammal(String  species,String hasFur){
+        super(species);
+        this.hasFur = hasFur;
+    }
+
+    public void makeSound(){
+        super.makeSound();
+        System.out.println("Mammel sound :- ");
+    }
+}
+
+class Dog extends Mammal{
     private String breed;
 
-    public Dog(String breed){
+    public Dog(String species , String hasFur,String breed){
+        super(species, hasFur);
         this.breed = breed;
+    }
+
+    public void makeSound(){
+        super.makeSound();
+        System.out.println("Bhau Bhau....");
     }
 }
 
 public class Task2 {
     public static void main(String[] args) {
-        
+        Dog obj = new Dog("Mammel", "Gray", "Dog");
+        obj.makeSound();
     }
 }
