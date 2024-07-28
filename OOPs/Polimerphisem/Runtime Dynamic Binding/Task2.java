@@ -1,5 +1,5 @@
-//Scenario 1: Shape Drawing Application
-//In a shape drawing application, create a base class called "Shape" with a method called "draw." Implement different derived classes such as "Circle," "Rectangle," and "Triangle" that override the "draw" method to display the respective shapes.
+//Scenario 2: Shape Drawing Application
+// In a shape drawing application, define a base class called "Shape" with a method called "draw" that displays the shape on the screen. Implement derived classes like "Circle" and "Rectangle" that override the "draw" method with their specific drawing logic.
 
 class Shape{
     public void draw(){
@@ -28,7 +28,7 @@ class Triangle extends Shape{
     }
 }
 
-public class TaskSheet1 {
+public class Task2 {
     public static void main(String[] args) {
         Circle obj1 = new Circle();
         Rectangle obj2 = new Rectangle(); 

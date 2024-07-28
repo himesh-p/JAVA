@@ -127,7 +127,7 @@ class Course{
                                 sc.nextLine();
                                 int m = sc.nextInt();
                                 student[i].setMarks(m);
-                                // sc.close();
+                                sc.close();
                                 break;
                         case 0: break;  
                         default:System.out.println("Invailid Choice!!!");

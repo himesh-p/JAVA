@@ -1,25 +1,17 @@
-//Scenario 10: Bank Customer Account Management
-//Design a bank account management system where a customer can have multiple bank accounts. The customer class contains a list of account objects, representing an aggregation relationship.
+//Scenario 2: University Department Management
+//Create a university department management system where a department consists of multiple faculty members. The department class contains a list of faculty objects, representing an aggregation relationship.
 
 import java.util.Scanner;
 
-class Bank{
-    private int acc_no;
+class Faculty{
     private String name;
-    private double balance;
+    private String quli;
+    private int age;
 
-    public Bank(int acc_no , String name, double balance){
-        this.acc_no = acc_no;
+    public Faculty(String name , String quli , int age){
         this.name = name;
-        this.balance = balance;
-    }
-
-    public int getAcc_no() {
-        return acc_no;
-    }
-
-    public void setAcc_no(int acc_no) {
-        this.acc_no = acc_no;
+        this.quli = quli;
+        this.age = age;
     }
 
     public String getName() {
@@ -30,117 +22,127 @@ class Bank{
         this.name = name;
     }
 
-    public double getBalance() {
-        return balance;
+    public String getQuli() {
+        return quli;
     }
 
-    public void setBalance(double balance) {
-        this.balance = balance;
+    public void setQuli(String quli) {
+        this.quli = quli;
     }
 
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+    
     public void display(){
-        System.out.println("Account No.     :- "+acc_no);
-        System.out.println("Holder's  name  :- "+name);
-        System.out.println("Account Balance :- "+balance);
+        System.out.println("The faculty name is :- "+name);
+        System.out.println("The qulification of this faculty is :- "+quli);
+        System.out.println("The age of this faculty is :- "+age);
     }
 }
 
-class Accounts{
-    Bank banks[];
+class Department{
+    Faculty facultys[];
     int count;
 
-    public Accounts(int capacity){
-        banks = new Bank[capacity];
+    public Department(int capacity){
+        facultys = new Faculty[capacity];
         count = 0;
     }
 
-    public void addAccounts(int acc_no , String name , double balance){
-        if(count < banks.length){
-            banks[count++] = new Bank(acc_no , name , balance);
-            System.out.println("Account added succesfull");
-        }else{
+    public void addFaculty(String name , String quli , int age){
+        if(count < facultys.length){
+            facultys[count++] = new Faculty(name , quli , age);
+            System.out.println("Faculty is added successfuly.");
+        }
+        else{
             System.out.println("The capacity is full.");
         }
     }
 
-    public void removeAccounts(int acc_no){
+    public void removeFaculty(String name){
         for (int i = 0; i < count; i++) {
-            if (banks[i].getAcc_no() == acc_no){
-                for(int j = i; j< count-1 ; j++){
-                    banks[j] = banks[j+1];
-                }
+            if(facultys[i].getName().equals(name)){
+                for(int j = i; j < count-1; j++) {
+                    facultys[j] = facultys[j+1];
+                }  
                 count--;
-                System.out.println("Account removed succecfully.");
+                System.out.println("The Faculty removed succesfuly.");
                 return;
             }
             else{
-                System.out.println("The Account is not available in this library.");
+                System.out.println("The Faculty cannot find.");
             }
         }
     }
 
-    public void updateAccounts(int acc_no){
-        for (int i = 0; i < count; i++) {
-            if (banks[i].getAcc_no() == acc_no){
+    public void updateFaculty(String name){
+        for(int i = 0; i < count; i++) {
+            if(facultys[i].getName().equals(name)){
                 int choice;
                 do{
                     Scanner sc = new Scanner(System.in);
-                    System.out.println("1------------>Account Number");
-                    System.out.println("2------------>Account's Name");
-                    System.out.println("3------------>Account's Balance");  
-                    System.out.println("0------------>exit");
+                    System.out.println("1-------------------------------------->name");
+                    System.out.println("2-------------------------------------->quli");
+                    System.out.println("3-------------------------------------->age");
+                    System.out.println("0-------------------------------------->Exit");
                     System.out.println("Enter your choice :- ");
                     choice = sc.nextInt();
 
-                    switch (choice) {
-                        case 1: System.out.println("Enter the new Account Number :- ");
+                    switch(choice){
+                        case 1: System.out.println("Enter the new Faculty Name :- ");
                                 sc.nextLine();
-                                int ac = sc.nextInt();
-                                banks[i].setAcc_no(ac);
+                                facultys[i].setName(sc.nextLine());
                                 break;
-                        case 2: System.out.println("Enter the new Account's Name :- ");
-                                sc.nextLine();
-                                String n = sc.nextLine();
-                                banks[i].setName(n);
+                 
+                        case 2: System.out.println("Enter the new Qulification :- ");
+                                sc.nextLine();        
+                                facultys[i].setQuli(sc.nextLine());
                                 break;
-                        case 3: System.out.println("Enter the new Account's Balance :- ");
-                                sc.nextLine();
-                                double bal = sc.nextDouble();
-                                banks[i].setBalance(bal);
-                                sc.close();
-                                break;    
-                        case 0: break;            
-                        default:System.out.println("Invailid Choice!!!");
+                        
+                        case 3: System.out.println("Enter the new Age :- ");
+                                facultys[i].setAge(sc.nextInt());
+                                // sc.close();
+                                break;
+                        case 0: break;
+                        
+                        default: System.out.println("Enter the vailid choice!!!");
                             break;
                     }
-                } while (choice != 0);
-                System.out.println("The Account updated succesfully.");
+                }while(choice != 0);
+                System.out.println("Faculty update succesfuly.");
                 return;
-            }
+            } 
         }
     }
-
-    public void displayAllAccounts(){
+    public void displayAll(){
         for (int i = 0; i < count; i++) {
-            banks[i].display();
-            System.out.println("------------------------------------------------------");
+            facultys[i].display();
         }
     }
-
 }
+
 
 public class Task2 {
     public static void main(String[] args) {
-        Accounts obj = new Accounts(10);
-            obj.addAccounts(1 , "Himesh" , 100000);
-            obj.addAccounts(2 , "Shrey" , 200000);
-            obj.addAccounts(3 , "Dhruv" , 300000);
-            obj.addAccounts(4 , "Mohak" , 400000);
-            obj.addAccounts(5 , "Meet" ,500000);
-            obj.displayAllAccounts();
-            obj.removeAccounts(3);
-            obj.displayAllAccounts();
-            obj.updateAccounts(2);
-            obj.displayAllAccounts();
+        Department obj = new Department(10);
+
+        obj.addFaculty("Mohak", "Diploma CS", 20);
+        obj.addFaculty("Shrey", "B.E CE", 22);
+        obj.addFaculty("Zafar", "B.Tech CSE", 23);
+        obj.addFaculty("Ronak", "B.tech Data Science", 25);
+        obj.addFaculty("Tejash", "B.Tech WebDesign", 40);
+
+        obj.displayAll();
+
+        obj.removeFaculty("Ronak");
+        obj.displayAll();
+
+        obj.updateFaculty("Shrey");
+        obj.displayAll();
     }
 }

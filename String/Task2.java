@@ -9,6 +9,9 @@
 public class Task2 {
     public static void main(String[] args) {
         String str = "Java is a popular programming language. Java is used for various applications.";
-        System.out.println("Search Query = "+str.);
+        for (int i = 0; i < str.length(); i++) {
+            // if(str.indexOf("java") == ){}
+        }
+
     }  
 }
