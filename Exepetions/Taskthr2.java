@@ -31,7 +31,7 @@ class Registration{
 
 public class Taskthr2 {
     public static void main(String[] args) {
-        Registration obj = new Registration("Mohak Sir", "mohak.royal@gmail.com");
+        Registration obj = new Registration("Mohak Sir", "mohak_royal@gmail.com");
         try{
             obj.validation();
         }catch(Exception e){
