@@ -6,12 +6,27 @@
      - Search Query: "Java"
      - Expected Output: Positions found at [0, 32]
  */
+
+import java.util.Scanner;
+
 public class Task2 {
     public static void main(String[] args) {
         String str = "Java is a popular programming language. Java is used for various applications.";
-        for (int i = 0; i < str.length(); i++) {
-            // if(str.indexOf("java") == ){}
+        Scanner sc = new Scanner(System.in);
+        int arr[] = new int[100];
+        System.out.println("Enter the Search Quary :- ");
+        String quary = sc.nextLine();
+        int index = str.indexOf(quary);
+        int i = 0;
+        while(index >=0 ){
+            arr[i] = index;
+            i++;
+            index = str.indexOf(quary , index+1);
         }
-
+    
+        for (int j = 0; j < i; j++) {
+            System.out.println(arr[j]);
+        }
+        sc.close();
     }  
 }
