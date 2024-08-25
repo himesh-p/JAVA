@@ -28,13 +28,13 @@ public class CreateThread {
         // System.out.println(two.getState());
         // two.run();
 
-        Thread three = new Thread("tran");
-        System.out.println(three.getState());
-        three.start();
-        System.out.println(three.getState());
-        three.run();
-        System.out.println(three.getState());
-        three.interrupt();
-        System.out.println(three.getState());
+        // Thread three = new Thread("tran");
+        // System.out.println(three.getState());
+        // three.start();
+        // System.out.println(three.getState());
+        // three.run();
+        // System.out.println(three.getState());
+        // three.interrupt();
+        // System.out.println(three.getState());
     }
 }
