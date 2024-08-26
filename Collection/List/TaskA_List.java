@@ -90,15 +90,16 @@ class RestaurantMenu{
     }
 
     public void displayMenuItems(){
-        
+        int i =1;
         for(MenuItem obj : menuItems){
-            System.out.println(obj.getName()+ " ----------->  "+obj.getPrice() + " Rupee.");
+            System.out.println(i++ +". "+obj.getName()+ " ----------->  "+obj.getPrice() + " Rupee.");
         }
     }
 }
 
 class Oreder{
     ArrayList<MenuItem> orederItems;
+    // private int quntity;
 
     public Oreder(){
         orederItems = new ArrayList<>();
