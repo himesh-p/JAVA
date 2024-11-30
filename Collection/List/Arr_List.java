@@ -91,4 +91,4 @@ public class Arr_List {
             size() - returns the length of lists
             toArray() - converts a list into an array
             contains() - returns true if a list contains specified element
-        */
+*/

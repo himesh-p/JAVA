@@ -6,11 +6,13 @@ public class Queueeee {
     public static void main(String[] args) {
         Queue<Integer> q = new PriorityQueue<>();
 
-        q.add(1);  //throws an IllegalStateException upon failing to insert the element
+        q.add(40);  //throws an IllegalStateException upon failing to insert the element
         // q.offer(4);   //returns false upon failing to insert the element
-        q.add(2);
-        q.add(3);
-        q.add(4);
+        q.add(31);
+        q.add(56);
+        q.add(78);
+        q.add(18);
+        q.add(8);
 
         System.out.println(q);
 

@@ -94,23 +94,10 @@ Access Modifiers:               ok
 
 Encapsulation:
 
-Scenario 2: Health Tracking Application
-In a health tracking application, encapsulate the "User" class's personal health data, such as weight, heart rate, and sleep patterns, to maintain privacy and provide controlled access to the user's health information.
-
-Scenario 3: Online Banking Application
-In an online banking application, encapsulate the "Account" class's balance and transaction history to protect the customer's financial information and ensure that interactions with the account are performed through controlled methods.
-
-Scenario 4: Smart Home Automation System
-In a smart home automation system, encapsulate the internal workings of devices like "Thermostat" and "LightingController" to provide a simplified interface for controlling and monitoring these devices while hiding complex implementation details.
-
 Scenario 5: Customer Relationship Management (CRM) System
 In a CRM system, encapsulate the customer data and methods for managing customer interactions to ensure data integrity, privacy, and controlled access to customer information.
 
 Array: 
-
-Scenario 4: Contact Management
-In a contact management application, create an array to store contact information such as names, phone numbers, and email addresses. Implement features such as adding new contacts, searching for a specific contact, and deleting contacts from the array.
-
 Scenario 5: Inventory Management
 In an inventory management system, create an array to store the quantities of different products in stock. Perform operations such as updating stock levels, searching for products based on certain criteria, and generating an inventory report.
 
@@ -125,6 +112,3 @@ In a stock portfolio management system, create an array to store the number of s
 
 Scenario 9: Event RSVPs
 In an event management system, create an array to store the RSVP status of attendees for an event. Perform operations such as counting the number of confirmed attendees, generating a guest list, and checking the availability of seats.
-
-Scenario 10: Survey Data Analysis
-In a survey data analysis application, create an array to store the responses of participants to survey questions. Perform operations such as calculating the percentage of participants with specific responses, generating charts or graphs based on the survey data, and extracting insights from the responses.

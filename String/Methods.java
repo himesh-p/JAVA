@@ -19,18 +19,18 @@ public class Methods {
       //   System.out.println(str.substring(10));
       //   System.out.println(str.substring(10, 15));
       //   System.out.println(str.indexOf(' ', 8));
-        // System.out.println(str.indexOf(", ", 7));
-        // System.out.println(str.lastIndexOf("a"));
-        // System.out.println(str.startsWith("Welcome"));
-        // System.out.println(str.startsWith("to", 8));
-        // System.out.println(str.endsWith("d"));
+      //   System.out.println(str.indexOf(", ", 7));
+      //   System.out.println(str.lastIndexOf("a"));
+      //   System.out.println(str.startsWith("Welcome"));
+      //   System.out.println(str.startsWith("to", 8));
+      //   System.out.println(str.endsWith("d"));
       //   System.out.println("HeLlO".toLowerCase());
       //   System.out.println("HeLlO".toUpperCase());
       //   String str = "   sd sd    ";
       //   System.out.println("\n" + str + " -> " + str.length() + "\n" + str.trim() + " -> " + str.trim().length());
       //   System.out.println(str.replace('a', 'A'));
-        // System.out.println(str.replace("Java", "python".toUpperCase()));
-        System.out.println(str.contains("java".toLowerCase()));
+      //   System.out.println(str.replace("Java", "python".toUpperCase()));
+      //   System.out.println(str.contains("java".toLowerCase()));
       //   String s = new String();
       //   String s = "";
       //   System.out.println(s.isEmpty());
@@ -96,14 +96,7 @@ String objects are immutable, which means that once created, their values cannot
 4. Encryption and Decryption:
    Implement a Java application that encrypts sensitive user data (like passwords) using a chosen encryption algorithm and allows decryption for authorized users.
 
-5. User Authentication:
-   Build a secure authentication system using hashed passwords in Java, where users' passwords are stored as hashes and compared during login verification.
 
-6. String Manipulation:
-   Create a Java program that takes a user's input and formats it into a readable sentence, ensuring proper capitalization and removing leading/trailing spaces.
-
-7. URL Manipulation:
-   Design a URL parser in Java that takes a URL string as input and separates it into its constituent parts like protocol, domain, path, and query parameters.
 
 8. Error Handling:
    Develop a log analysis tool in Java that reads log files, extracts error messages, and categorizes them based on timestamp, error codes, and descriptions for easier debugging.
@@ -132,17 +125,7 @@ Sample Test Cases:
      - Expected Output: Encrypted/Hashed password
      - Decryption: Ensure the decrypted password matches the original input.
 
-5. User Authentication:
-   - Input: Username: "user123", Password: "Password@123"
-     - Expected Output: Hashed password stored securely; successful login using the correct credentials.
 
-6. String Manipulation:
-   - Input: "   hello, world!   "
-     - Expected Output: "Hello, world!" (formatted sentence with proper capitalization and no leading/trailing spaces)
-
-7. URL Manipulation:
-   - Input URL: "https://www.example.com/path/to/resource?param1=value1&param2=value2"
-     - Expected Output: Separated components - protocol: "https", domain: "www.example.com", path: "/path/to/resource", query parameters: {"param1": "value1", "param2": "value2"}
 
 8. Error Handling:
    - Input Log:
@@ -159,6 +142,4 @@ Sample Test Cases:
 10. Internationalization and Localization:
     - Input: Select language as "French"
       - Expected Output: Display content in French language as per the user's choice.
-
-
 */

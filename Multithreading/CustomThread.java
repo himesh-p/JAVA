@@ -21,8 +21,8 @@ class MyThread extends Thread{
 
 public class CustomThread {
     public static void main(String[] args) {
-        MyThread[] multiMyThreads = new MyThread[100];
-        for (int i = 0; i < multiMyThreads.length; i++) {
+        MyThread[] multiMyThreads = new MyThread[10];
+        for (int i = 0; i < 10; i++) {
             multiMyThreads[i] = new MyThread("EveGen " + i);
             multiMyThreads[i].start();
             System.out.println(multiMyThreads[i].getName() + " is started!");
