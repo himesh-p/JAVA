@@ -10,5 +10,6 @@ public class Basic7{
 		for(int i=1 ; i<=10 ; i++){
 			System.out.println(n1+"*"+i+"="+n1*i);
 		}
+		sc.close();
 	}
 }
